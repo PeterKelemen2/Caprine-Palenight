@@ -1,0 +1,54 @@
+/*
+This is the custom styles file where you can add anything you want.
+The styles here will be injected into Caprine and will override default styles.
+If you want to disable styles but keep the config, just comment the lines that you don't want to be used.
+
+Press Command/Ctrl+R in Caprine to see your changes.
+*/
+
+:root, .__fb-light-mode, .__fb-dark-mode {
+    color: #7a00ff;
+    --card-background: #1c2034 !important; /*Pop up stuff color*/
+    --comment-background: #181b2a !important; /*Text field color*/
+    --card-background-flat: #0f1014 !important;
+    --disabled-button-background: #9b9b9b !important; /* Exit button */
+    --divider: #ffffff !important; /*Leftest part divider*/
+    --surface-background: #292d3e !important; /*Leftest side background*/
+    --hover-overlay: rgba(255, 0, 0, 0.05) !important;
+    --media-inner-border: rgba(77, 84, 120, 0.46) !important; /* Line separating spaces*/
+    --messenger-card-background: #292d3e !important; /* Content background */
+    --popover-background: #3b405a !important; /*Hover-over color*/
+    --primary-icon: #bdbdbd !important; /*Misc buttons like new chat, call*/
+    --primary-text: #ffffff !important; /*Names, received text color*/
+    --secondary-text: #ababab !important; /*Text under names*/
+    --secondary-button-background: #303d69 !important; /*Popped menu icon background*/
+    --wash: #4f5677 !important; /*Loading stuff background*/
+    stroke-width: 20px;
+
+    --shadow-1: rgba(0, 0, 0, 0.3) !important;
+    --shadow-2: rgba(0, 0, 0, 0.4) !important;
+    --shadow-5: rgba(0, 0, 0, 0.7) !important;
+    --shadow-8: rgba(0, 0, 0, 1) !important;
+    --shadow-inset: rgba(000, 000, 000, 0.5) !important;
+
+}
+
+/* Custom scrollbar */
+/*Dark Mode*/
+html.dark-mode ::-webkit-scrollbar {
+    width: 16px;
+}
+
+html.dark-mode ::-webkit-scrollbar-thumb {
+    box-shadow: inset 0 0 16px 16px #784491;
+    border-radius: 0px;
+    border: solid 4px transparent;
+}
+
+html.dark-mode ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 16px 16px #292d3e;
+}
+
+html.dark-mode ::-webkit-scrollbar-track:hover {
+    box-shadow: inset 0 0 16px 16px #292d3e;
+}
